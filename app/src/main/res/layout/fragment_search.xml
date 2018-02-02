@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".ui.search.SearchActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_search"
+        android:enabled="false"
+        android:layout_alignParentRight="true"
+        android:text="Go"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="word to search"
+        android:focusableInTouchMode="true"
+        android:layout_toLeftOf="@id/btn_search"
+        android:id="@+id/edt_search"
+        />
+
+    <Spinner
+        android:id="@+id/spnr_sort"
+        android:layout_below="@id/edt_search"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/lbl_sort"
+        android:layout_below="@id/edt_search"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@id/spnr_sort"
+        android:layout_alignBaseline="@id/spnr_sort"
+        android:text="Sort By"
+        android:visibility="invisible"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_below="@id/lbl_sort"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/emptyText"
+        android:layout_below="@id/lbl_sort"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No definition Found"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>

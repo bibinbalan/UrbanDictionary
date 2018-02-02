@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Dictionary</string>
+    <string name="error">Unexpected error ocurred! Please try later</string>
+    <string name="network_error">Please check the network connection!</string>
+    <string name="empty_response">List is empty</string>
+    <string name="action_sort_by">Sort By</string>
+
+    <string-array name="sort_items">
+        <item>ThumbsUp</item>
+        <item>ThumbsDown</item>
+    </string-array>
+
+</resources>
