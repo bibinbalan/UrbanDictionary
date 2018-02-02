@@ -45,7 +45,7 @@ public class SearchPressenterTest {
     }
 
     @Test
-    public void loadProductsFromRepositoryAndLoadIntoView() throws IOException {
+    public void loadFromRepositoryAndLoadIntoView() throws IOException {
 
         String word = "cat";
         String json = IOUtils.readStringFromResourcePath("sample_response.json");
@@ -64,7 +64,7 @@ public class SearchPressenterTest {
 
 
     @Test
-    public void loadProductsFromRepositoryFailsAndPresentErrorLayout() {
+    public void loadFromRepositoryFailsAndPresentErrorLayout() {
 
         String word = "cat";
         when(view.isNetworkConnected()).thenReturn(true);

@@ -99,7 +99,6 @@ public class NetworkModule {
     @Provides
     DataHelper provideRepository(ServiceApi retrofitService) {
         return new DataManager(retrofitService);
-       // return new DataManagerTest(context);
     }
 
 
